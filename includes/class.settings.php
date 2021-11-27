@@ -27,6 +27,7 @@ class Wplms_Pre_Course_Quiz{
     private function __construct(){
         add_filter('wplms_quiz_metabox',array($this,'add_setting'));
         add_filter('custom_meta_box_type',array($this,'add_custom_meta_boxes'),10,3);
+        add_action('wplms_evaluate_quiz',array($this,'assign_course_on_quiz_submission'),10,4);
         
     }
 
@@ -40,6 +41,19 @@ class Wplms_Pre_Course_Quiz{
             );
 
      return $args;
+    }
+    function assign_course_on_quiz_submission($quiz_id,$marks,$user_id,$max){
+        $data = get_post_meta($quiz_id,'vibe_pre_course_quiz',true);
+        $data = maybe_unserialize($data);
+        if(!empty($data)){
+            foreach($data['course'] as $i=>$course_id){
+                $min =$data['min'][$i];
+                $max =$data['max'][$i];
+                if($marks <= $max && $marks >= $min){
+                    bp_course_add_user_to_course($user_id,$course_id);    
+                }
+            }
+        }
     }
 
     function add_custom_meta_boxes($type,$meta,$id){

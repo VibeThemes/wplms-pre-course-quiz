@@ -15,6 +15,9 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+if(!defined('WPLMS_PRE_COURSE_QUIZ'))
+define( 'WPLMS_PRE_COURSE_QUIZ', plugin_dir_path( __FILE__ ) );
+
 define( 'WPLMS_PRE_COURSE_QUIZ_VERSION','1.0');
 
 
