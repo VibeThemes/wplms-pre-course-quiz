@@ -8,7 +8,7 @@
  * Version: 1.0
  * Text Domain: wplms-pre-course-quiz
  * Domain Path: /languages
- * Tested up to: 5.8.2
+ * Tested up to: 5.9.1
  *
  * @package WPLMS
  */
@@ -40,3 +40,16 @@ function wplms_pre_course_quiz_translations(){
         load_textdomain( 'wplms-pre-course-quiz', $mofile_local );
     }  
 }
+
+
+function Wplms_parent_user_Plugin_updater() {
+    $license_key = trim( get_option( 'wplms_parent_user_license_key' ) );
+    $edd_updater = new Wplms_parent_user_Plugin_Updater( 'https://wplms.io', __FILE__, array(
+            'version'   => WPLMS_PRE_COURSE_QUIZ_VERSION,               
+            'license'   => $license_key,        
+            'item_id' => 88911,    
+            'author'    => 'VibeThemes' 
+        )
+    );
+}
+add_action( 'admin_init', 'Wplms_parent_user_Plugin_updater', 0 );
