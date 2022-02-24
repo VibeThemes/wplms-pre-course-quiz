@@ -23,6 +23,8 @@ define( 'WPLMS_PRE_COURSE_QUIZ_VERSION','1.0');
 
 //require_once(dirname(__FILE__).'/includes/create-course/loader.php');
 
+include_once 'includes/updater.php';
+include_once 'includes/config.php';
 include_once 'includes/class.settings.php';
 
 
@@ -42,9 +44,9 @@ function wplms_pre_course_quiz_translations(){
 }
 
 
-function Wplms_parent_user_Plugin_updater() {
-    $license_key = trim( get_option( 'wplms_parent_user_license_key' ) );
-    $edd_updater = new Wplms_parent_user_Plugin_Updater( 'https://wplms.io', __FILE__, array(
+function Wplms_Pre_Course_Quiz_Plugin_updater() {
+    $license_key = trim( get_option( 'wplms_pre_course_quiz_license_key' ) );
+    $edd_updater = new Wplms_Pre_Course_Quiz_Plugin_Updater( 'https://wplms.io', __FILE__, array(
             'version'   => WPLMS_PRE_COURSE_QUIZ_VERSION,               
             'license'   => $license_key,        
             'item_id' => 88911,    
@@ -52,4 +54,4 @@ function Wplms_parent_user_Plugin_updater() {
         )
     );
 }
-add_action( 'admin_init', 'Wplms_parent_user_Plugin_updater', 0 );
+add_action( 'admin_init', 'Wplms_Pre_Course_Quiz_Plugin_updater', 0 );

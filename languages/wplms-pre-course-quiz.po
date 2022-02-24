@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPLMS PRE COURSE QUIZ\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 17:06+0530\n"
+"PO-Revision-Date: 2022-02-24 17:06+0530\n"
+"Last-Translator: VibeThemes <vibethemes@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Loco-Version: 2.5.3; wp-5.8.2\n"
+"X-Domain: wplms-pre-course-quiz\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: /Applications/MAMP/htdocs/wplms/wp-content/plugins/"
+"wplms-pre-course-quiz\n"
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:37
+msgid "Assign courses on quiz evaluation"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:38
+msgid ""
+"Courses are assigned based on quiz marks. Set the courses and the marks range"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:64
+msgid "Add More"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:81
+msgid "Min Marks"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:82
+msgid "Max Marks"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:89
+msgid "Select Course to assign post quiz"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:91
+msgid "Min marks"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/class.settings.php:92
+msgid "Max marks"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/config.php:118
+msgid "Unable to contact server"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/updater.php:177
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/updater.php:184
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/updater.php:324
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/wplms/wp-content/plugins/wplms-pre-course-quiz/includes/updater.php:324
+msgid "Error"
+msgstr ""

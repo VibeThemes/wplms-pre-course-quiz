@@ -223,4 +223,4 @@ class Wplms_Pre_Course_Quiz_Config{
 	}
 }
 
-wplms_pre_course_quiz_Config::init();
+Wplms_Pre_Course_Quiz_Config::init();
