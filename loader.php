@@ -5,10 +5,10 @@
  * Description: The most advanced Learning management system for WordPress - wplms.io
  * Author: VibeThemes
  * Author URI: https://vibethemes.com
- * Version: 1.0
+ * Version: 1.1
  * Text Domain: wplms-pre-course-quiz
  * Domain Path: /languages
- * Tested up to: 5.9.1
+ * Tested up to: 6.1
  *
  * @package WPLMS
  */
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 if(!defined('WPLMS_PRE_COURSE_QUIZ'))
 define( 'WPLMS_PRE_COURSE_QUIZ', plugin_dir_path( __FILE__ ) );
 
-define( 'WPLMS_PRE_COURSE_QUIZ_VERSION','1.0');
+define( 'WPLMS_PRE_COURSE_QUIZ_VERSION','1.1');
 
 
 //require_once(dirname(__FILE__).'/includes/create-course/loader.php');

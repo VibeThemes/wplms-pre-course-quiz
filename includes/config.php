@@ -106,13 +106,14 @@ class Wplms_Pre_Course_Quiz_Config{
 		$api_params = array(
 			'edd_action'=> 'activate_license',
 			'license' 	=> $license,
-			'item_name' => urlencode( 'Wplms Parent User' ), // the name of our product in EDD
+			'item_id' => 88911, // the name of our product in EDD
 			'url'       => home_url()
 		);
 
 		// Call the custom API.
 		$response = wp_remote_post( WPLMS_URL, array( 'timeout' => 15, 'sslverify' => false, 'body' => $api_params ) );
 
+		//print_R($response);
 		// make sure the response came back okay
 		if ( is_wp_error( $response ) ){
 			return __('Unable to contact server','wplms-pre-course-quiz');
@@ -156,7 +157,7 @@ class Wplms_Pre_Course_Quiz_Config{
 		$api_params = array(
 			'edd_action'=> 'deactivate_license',
 			'license' 	=> $license,
-			'item_name' => urlencode( 'Wplms Parent User' ), // the name of our product in EDD
+			'item_id' => 88911, // the name of our product in EDD
 			'url'       => home_url()
 		);
 
@@ -199,7 +200,7 @@ class Wplms_Pre_Course_Quiz_Config{
 		$api_params = array(
 			'edd_action' => 'check_license',
 			'license' => $license,
-			'item_name' => urlencode( 'Wplms Parent User' ),
+			'item_id' => 88911,
 			'url'       => home_url()
 		);
 
